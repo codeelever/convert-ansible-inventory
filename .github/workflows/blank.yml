@@ -36,7 +36,6 @@ jobs:
     - name: Download the Microsoft repository GPG keys
       run: wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
         
-    
     - name: Register the Microsoft repository GPG keys
       run: sudo dpkg -i packages-microsoft-prod.deb
 
@@ -45,3 +44,7 @@ jobs:
 
     - name: Install PowerShell
       run: sudo apt-get install -y powershell
+    
+    # Install Pester
+    - name: Install Pester Framework
+      run: pwsh -c "Install-Module pester -force" 
