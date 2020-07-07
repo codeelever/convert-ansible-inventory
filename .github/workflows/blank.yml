@@ -48,7 +48,3 @@ jobs:
     # Install Pester
     - name: Install Pester Framework
       run: pwsh -c "Install-Module pester -force" 
-    
-    # run tests
-    - name: Invoke Pester
-      run: pwsh -c "Invoke-Pester"
