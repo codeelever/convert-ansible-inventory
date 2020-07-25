@@ -5,7 +5,7 @@ $modules |  Import-Module -Force
 
 Describe "ConvertTo-AnsibleInventory" {
     BeforeEach {
-      $obj = Import-CSV "inventory.csv" | Select-Object -First 1    
+      $obj = Import-CSV "sample-inventory.csv" | Select-Object -First 1    
     }
        
     It "Creates Inventory Group" {
